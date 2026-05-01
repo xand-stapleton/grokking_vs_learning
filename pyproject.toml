@@ -1,3 +1,38 @@
+[project]
+name = "grokking-vs-learning"
+version = "0.1.0"
+description = "Information-geometric analysis of grokking vs learning in neural networks"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Authors"}
+]
+maintainers = [
+    {name = "Alexander Stapleton", email = "a.g.stapleton@qmul.ac.uk"}
+]
+
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "pyyaml>=6.0",
+    "plotly>=5.14.0",
+    "tqdm>=4.65.0",
+    "dill>=0.3.6",
+    "nngeometry>=0.3.0",
+    "natsort>=8.4.0",
+    "matplotlib>=3.7.0",
+    "prettytable>=3.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
 [tool.ruff]
-# But use a different line length.
 line-length = 80

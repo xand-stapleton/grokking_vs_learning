@@ -135,7 +135,6 @@ class AnalysableModel:
                         variant="regression",
                         representation=PMatDiag,
                         device=self.hp.device,
-                        n_output=self.hp.P,
                     ).get_diag()
 
                     torch.save(fim, f"{self.fim_dir}/epoch-{epoch}.pt")
@@ -177,7 +176,6 @@ class AnalysableModel:
             variant="regression",
             representation=PMatDiag,
             device=self.hp.device,
-            n_output=model_layers[-1].out_features,
         ).get_diag()
 
         # Check if self.original_network exists (tell us if the model has been
