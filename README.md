@@ -145,6 +145,12 @@ The repository includes code for generating synthetic datasets:
 - **ModAdd Dataset**: Modular arithmetic examples
 - **MNIST**: Uses standard MNIST dataset
 
+For the Ising experiments, download the data from Zenodo (~100MB):
+
+- [Zenodo record](https://zenodo.org/records/19949740)
+
+After downloading, place the extracted files in `ising/datasets/blobs`.
+
 ## Configuration
 
 Each task uses YAML configuration files in their respective `configs/` directories. Common parameters include:
@@ -167,6 +173,30 @@ Each task uses YAML configuration files in their respective `configs/` directori
 
 ## References
 
+Please cite the following if you use this repository or the Ising dataset.
+
+```
+@article{gcoe2025grokkingvslearningfeatures,
+	title={Grokking vs. Learning: Same Features, Different Encodings},
+	author={Dmitry Manning-Coe and Jacopo Gliozzi and Alexander G. Stapleton and Edward Hirst and Giuseppe De Tomasi and Barry Bradlyn and David S. Berman},
+	year={2025},
+	eprint={2502.01739},
+	archivePrefix={arXiv},
+	primaryClass={cs.LG},
+	url={https://arxiv.org/abs/2502.01739},
+}
+
+@misc{https://doi.org/10.5281/zenodo.19949740,
+  doi = {10.5281/ZENODO.19949740},
+  url = {https://zenodo.org/doi/10.5281/zenodo.19949740},
+  author = {Manning-Coe,  Dmitry and Gliozzi,  Jacopo and Stapleton,  Alexander and Hirst,  Edward and De Tomasi,  Giuseppe and Bradlyn,  Barry and Berman,  David},
+  title = {Ising samples 16x16 lattice,  2d,  grokking vs learning},
+  publisher = {Zenodo},
+  year = {2026},
+  copyright = {MIT License}
+}
+```
+
 
 ## License
 
@@ -179,6 +209,3 @@ See [LICENSE](LICENSE) for details.
 - Data paths should be configured in both training scripts and the analysis script
 - Computation of Fisher Information Matrices can be memory-intensive; adjust batch sizes accordingly for your hardware
 
-## Contact
-
-For questions or data requests, please contact the authors.
