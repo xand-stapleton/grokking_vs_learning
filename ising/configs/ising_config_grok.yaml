@@ -1,0 +1,48 @@
+data_seed_start: 0
+data_seed_end: 10
+sgd_seed_start: 0
+sgd_seed_end: 10
+init_seed_start: 0
+init_seed_end: 10
+fisher_seed_start: 0
+fisher_seed_end: 10
+fisher_bs: 16
+weight_decay: 0.1
+train_size: 300
+test_size: 1000
+learning_rate: !!float 1.e-4
+hiddenlayers_input: [100]
+train_type: Ising
+P: 97
+train_fraction: 0.7
+weight_multiplier: 1
+cluster_arg: 0
+epochs: 100000
+# epochs: 100
+loss_criterion: CrossEntropy  # CrossEntropy or MSE
+optimiser_name: Adam
+bs: 300
+conv_channels: [2, 4]
+dropout_prob: 0
+save_interval: 200
+activation: relu
+desc: ising
+all_seeds_same: true
+archi: cnn
+save_loc_local_d: runs/grok/
+save_loc_cluster_d: runs/grok/
+
+# Calculable quantities
+iprs: false
+weight_norm: false
+cosine_similarity: false
+linear_decomposition: false
+decile_means: false
+sample_indices: false
+fims: false
+root_dir: runs/grok/
+
+# FIM pruning
+cutoff_beginning: -12
+cutoff_end: 2
+cutoff_num: 2000

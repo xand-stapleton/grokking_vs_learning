@@ -1,0 +1,28 @@
+ArrayTaskID   data_seed_start    data_seed_end    sgd_seed_start    sgd_seed_end    init_seed_start    init_seed_end    wd     grok    train_size    hiddenlayer    learning_rate_input    train_type    P    train_fraction    weight_multiplier   
+1             2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -1.5
+2             2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -2.0
+3             2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -2.5
+4             2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -3.5
+5             2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -4.0
+6             2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -5.0
+7             2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -5.5
+8             2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -6.5
+9             2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -7.0
+10            2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -8.0
+11            2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -10.0
+12            2                  5                0                 1               0                  1                3e-5   False   500           512            50                     Mod           113  70                -20.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

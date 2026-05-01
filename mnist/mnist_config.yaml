@@ -1,0 +1,19 @@
+---
+data_seed_start: 0
+data_seed_end: 1
+sgd_seed_start: 0
+sgd_seed_end: 1
+init_seed_start: 0
+init_seed_end: 1
+weight_decay: 0.01
+train_size: 500
+test_size: 1000
+learning_rate_input: !!float 1e-4
+hiddenlayers_input: [70,35]
+train_type: MNIST
+P: 97
+train_fraction: 0.7
+weight_multiplier: 1
+cluster_arg: 0
+epochs: 10000
+

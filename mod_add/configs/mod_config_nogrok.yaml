@@ -1,0 +1,46 @@
+data_seed_start: 0
+data_seed_end: 10
+sgd_seed_start: 0
+sgd_seed_end: 10
+init_seed_start: 0
+init_seed_end: 10
+fisher_seed_start: 0
+fisher_seed_end: 10
+fisher_bs: 16
+weight_decay: 3e-5
+train_size: 300
+test_size: 1000
+learning_rate: !!float 5e-3
+hiddenlayers_input: [512]
+train_type: Mod
+P: 113
+train_fraction: 0.7
+weight_multiplier: 0.1
+cluster_arg: 0
+epochs: 10000
+loss_criterion: CrossEntropy  # CrossEntropy or MSE
+optimiser_name: Adam
+bs: 64
+conv_channels: [2, 4]
+dropout_prob: 0
+save_interval: 200
+activation: relu
+desc: mod_add
+all_seeds_same: true
+archi: mlp
+save_loc_local_d: test_runs
+save_loc_cluster_d: test_runs
+
+# Calculable quantities
+analysable_quantities:
+  euclidcosine: false
+  iprs: false
+  norms: false
+  linear_decomposition: false
+  decile_steps: false
+  fims: true
+
+# FIM pruning
+cutoff_beginning: -12
+cutoff_end: 2
+cutoff_num: 2000
